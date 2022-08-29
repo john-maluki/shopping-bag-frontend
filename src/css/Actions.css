@@ -1,0 +1,42 @@
+.action {
+  gap: 5px;
+  align-items: baseline;
+  cursor: pointer;
+}
+
+.action > p {
+  color: #ff9292;
+}
+
+.action-panel {
+  position: relative;
+  visibility: hidden;
+}
+
+.action-list {
+  padding: 20px;
+  position: absolute;
+  background-color: var(--bg-white);
+  top: 20px;
+  right: 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.action-list div {
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.action-list ul {
+  list-style: none;
+}
+
+.action-list ul li {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.action-list ul li:hover {
+  background-color: linen;
+}

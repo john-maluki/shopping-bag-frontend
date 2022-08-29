@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { BrowserRouter } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "./App.css";
+import "react-toastify/dist/ReactToastify.css";
+import Content from "./components/content/Content";
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import { obtainUser } from "./services/userService";
 
-function App() {
+const App = () => {
+  const [userData, setUserData] = useState({});
+  const getUserData = () => {
+    const user = obtainUser();
+    setUserData(user);
+  };
+
+  useEffect(getUserData, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <ToastContainer />
+      <BrowserRouter>
+        <Header user={userData} />
+        <Content user={userData} />
+        <Footer />
+      </BrowserRouter>
+    </React.Fragment>
   );
-}
+};
 
 export default App;

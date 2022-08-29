@@ -1,0 +1,140 @@
+.showcase-form {
+  position: relative;
+  top: 60px;
+  min-height: 350px;
+  width: 400px;
+}
+
+.showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase-form input[type="email"],
+.showcase-form input[type="password"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+.showcase-text p {
+  margin-bottom: 25px;
+}
+
+.showcase-form input[type="submit"] {
+  font-size: 16px;
+}
+
+.showcase-form input[type="submit"]:hover {
+  transform: scale(0.95);
+}
+
+.login-if-account,
+.register-if-not-account {
+  opacity: 0.7;
+  margin-top: 20px;
+}
+
+.login-if-account p,
+.login-if-account a,
+.register-if-not-account p,
+.register-if-not-account a {
+  display: inline-block;
+}
+
+.login-if-account p,
+.register-if-not-account p {
+  margin-right: 10px;
+}
+
+.login-if-account p:nth-child(2),
+.register-if-not-account p:nth-child(2) {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--log-color-shopping);
+}
+
+.login-if-account p:nth-child(2):hover,
+.register-if-not-account p:nth-child(2):hover {
+  text-decoration: underline;
+}
+
+/* Start -- complete account registration */
+fieldset#completing-registration {
+  position: relative;
+  background-color: white;
+  padding: 30px 20px;
+  padding-bottom: 100px;
+}
+
+.complete-account-registration {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-control label {
+  margin-right: 10px;
+}
+
+.form-control input[type="text"],
+.form-control input[type="email"] {
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.form-control input[type="text"]:focus,
+.form-control input[type="email"]:focus {
+  outline-color: var(--log-color-shopping);
+}
+.complete-account-registration .btn {
+  border-radius: 0;
+  font-size: 18px;
+}
+
+.complete-account-registration:hover .btn {
+  transform: scale(1);
+}
+
+form fieldset:first-child {
+  padding: 10px;
+  margin-top: 20px;
+  align-items: flex-end;
+}
+
+form fieldset:first-child fieldset {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.personal-email-and-contact {
+  display: flex;
+  gap: 20px;
+}
+
+.cancel-final-registration {
+  margin-top: 30px;
+}
+
+.cancel-final-registration button {
+  width: 100px;
+  padding: 5px 1px;
+  cursor: pointer;
+}
+
+.cancel-final-registration button:hover {
+  transform: scale(0.98);
+}
+
+/* End -- complete account registration */

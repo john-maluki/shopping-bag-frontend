@@ -1,0 +1,5 @@
+.min-content-heght {
+  min-height: calc(100vh);
+}
+
+@import url("./Home.css");

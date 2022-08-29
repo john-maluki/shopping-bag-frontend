@@ -1,38 +1,138 @@
-.App {
-  text-align: center;
+:root {
+  --main-height: 700px;
+  --bg-white: #fff;
+  --log-color-bag: #b19797;
+  --log-color-shopping: #00c2ff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #f8f8f8;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* util */
+main {
+  margin: 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.col-white {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.fs-1 {
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+p {
+  margin: 10px 0;
+}
+
+.card {
+  background-color: var(--bg-white);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: var(--log-color-shopping);
+  color: var(--bg-white);
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: black;
+  border: 1px solid var(--log-color-shopping);
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+input[type="search"] {
+  padding: 10px 40px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+input[type="search"]:focus {
+  border: none;
+  outline: 2px solid var(--log-color-shopping);
+}
+
+.flex-row {
+  display: flex; /* default row */
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.active {
+  color: #00c2ff;
+}
+
+.loader-indicator {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.saving-indicator,
+.canceling-indicator {
+  display: flex;
+  gap: 10px;
+  color: var(--log-color-shopping);
+}
+
+.element-hidden {
+  visibility: hidden;
+}
+
+.element-visible {
+  visibility: visible;
+}
+
+.errors {
+  margin-top: 5px;
+  color: red;
+  font-size: small;
+}
+@import url("./css/Actions.css");
+@import url("./css/Header.css");
+@import url("./css/Content.css");
+@import url("./css/Products.css");
+@import url("./css/Shops.css");
+@import url("./css/MyBags.css");
+@import url("./css/Trash.css");
+@import url("./css/RegisterLoginForms.css");
+@import url("./css/Footer.css");

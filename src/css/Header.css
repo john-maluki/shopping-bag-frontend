@@ -1,0 +1,144 @@
+header {
+  background-color: var(--bg-white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header > div {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > div > p {
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--log-color-bag);
+}
+
+header > div > p span {
+  color: var(--log-color-shopping);
+}
+
+header div ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  color: #707070;
+}
+
+header div ul li {
+  margin: 0 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #707070;
+}
+
+header > ul li:visited {
+  text-decoration: none;
+}
+
+nav > ul > li:last-child {
+  margin-left: 150px;
+  position: relative;
+}
+
+nav .user > div > p {
+  margin: 0;
+}
+
+nav .user div {
+  gap: 10px;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #707070;
+}
+
+.user-deatails-pane {
+  width: 250px;
+  height: 300px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: var(--bg-white);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+  visibility: hidden;
+}
+
+.user-details-pane-visible {
+  visibility: visible;
+}
+
+.user-deatails-pane .your-account,
+.customer-detail,
+.username-detail {
+  cursor: default;
+}
+
+.user-deatails-pane .your-account {
+  background-color: #6d6e70;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.customer-detail div,
+.username-detail div {
+  margin: 0;
+}
+
+.customer-detail,
+.username-detail {
+  align-items: baseline;
+  padding: 0 20px 0 20px;
+  margin: 0;
+}
+
+.user-deatails-pane hr {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  opacity: 0.2;
+}
+
+.user ul {
+  flex-direction: column;
+}
+
+.user ul li .logout,
+.user ul li .profile {
+  text-decoration: none;
+  color: rgb(231, 130, 130);
+}
+
+.pane-record:hover {
+  text-decoration: underline;
+}
+
+/* Mobile (portrait and landscape) */
+@media only screen and (max-device-width: 480px) {
+  header {
+    position: initial;
+  }
+  header div:first-child {
+    flex-direction: column;
+  }
+
+  header div ul {
+    flex-direction: column;
+  }
+
+  nav > ul > li:last-child {
+    margin-left: 0;
+  }
+
+  header div:first-child {
+    height: fit-content;
+  }
+}

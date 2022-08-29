@@ -1,0 +1,73 @@
+.create_bag_link {
+  display: flex;
+  gap: 20px;
+  color: #666;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.create_bag_link .icon {
+  color: #b19797;
+  cursor: pointer;
+}
+
+.all-shopping-bags {
+  color: #707070;
+}
+
+.all-shopping-bags > p {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.shopping_bag_list {
+  margin-left: 50px;
+}
+
+.shopping_bag {
+  width: fit-content;
+  margin-bottom: 15px;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.shopping_bag p {
+  margin: 0;
+}
+
+/* To check more about this */
+[data-title]:hover:after {
+  opacity: 1;
+  transition: all 0.1s ease 0.5s;
+  visibility: visible;
+}
+
+[data-title]:after {
+  width: 300px;
+  height: 20px;
+  content: attr(data-title);
+  background-color: white;
+  color: #666;
+  font-size: 15px;
+  position: absolute;
+  padding: 1px 5px 2px 10px;
+  bottom: 0;
+  left: 120%;
+  white-space: nowrap;
+  box-shadow: 1px 1px 3px #222222;
+  opacity: 0;
+  border: 1px solid #432;
+  border-radius: 20px 0 0 0;
+  z-index: 99999;
+  visibility: hidden;
+}
+
+[data-title] {
+  position: relative;
+}
+
+/* import MyBags */
+@import url("./MyBag.css");

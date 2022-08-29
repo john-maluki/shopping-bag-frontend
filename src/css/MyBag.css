@@ -1,0 +1,46 @@
+.header-status-action {
+  justify-content: space-between;
+}
+
+.shopping-header,
+.shopping-header > div,
+.header-status-action .left {
+  gap: 20px;
+}
+
+.header-status-action .left .status p:first-child {
+  margin-right: 5px;
+}
+
+.header-status-action .left .status p:last-child {
+  color: var(--log-color-shopping);
+}
+
+.left > div {
+  margin-right: 50px;
+}
+
+.shopping-bag-table {
+  margin-top: 50px;
+}
+
+table {
+  text-align: left;
+}
+
+thead th {
+  padding-bottom: 1.5rem;
+}
+
+table th,
+table td {
+  padding-right: 20px;
+}
+
+table td {
+  padding-bottom: 20px;
+}
+
+table td:last-child {
+  text-align: center;
+}

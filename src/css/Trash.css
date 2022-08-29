@@ -1,0 +1,24 @@
+.trash-header {
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.trash-header > p {
+  color: var(--log-color-shopping);
+  font-size: 25px;
+}
+
+.trashed-shopping-bag-list p:first-child {
+  margin-bottom: 30px;
+  color: #707070;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.action-per-item .undo,
+.action-per-item .delete {
+  display: inline-block;
+  width: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
