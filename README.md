@@ -58,3 +58,7 @@ docker run -p 3000:3000 maluki/shoppingbag-frontend:0.0.1-SNAPSHOT
 ```
 
 To view the running application move to `http://localhost:3000` on your favorite browser.
+
+## Copyright
+
+Released under the MIT License. See the [LICENSE](https://github.com/john-maluki/shopping-bag-frontend/blob/main/LICENSE) file.
