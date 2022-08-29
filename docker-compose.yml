@@ -1,0 +1,12 @@
+version: '3'
+services:
+  shoppingbag-frontend:
+    build:
+      context: .
+    volumes:
+      - .:/shoppingbag-frontend
+    ports:
+      - 3000:3000
+    image: maluki/shoppingbag-frontend:0.0.1-SNAPSHOT
+    container_name: shoppingbag-frontend-container
+    command: npm start
